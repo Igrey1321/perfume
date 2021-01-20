@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-.header-up__tel, .header-nav__link, .first__text {
+.header-up__tel, .header-nav__link, .first__text, .product__title, .product__subtitle, .product__price, .product__btn {
   font-family: 'Tenor Sans', sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -385,6 +385,53 @@ input[type='search']::-webkit-search-results-decoration {
   position: absolute;
   left: 0;
   top: 50px;
+}
+
+@font-face {
+  font-family: 'Tenor Sans';
+  src: url("TenorSans.eot");
+  src: local("Tenor Sans"), local("TenorSans"), url("../font/tenor+sans/TenorSans.eot?#iefix") format("embedded-opentype"), url("../font/tenor+sans/TenorSans.woff") format("woff"), url("../font/tenor+sans/TenorSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.product__title, .product__subtitle, .product__price, .product__btn {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.product {
+  text-align: center;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product__title {
+  padding: 10px 0 15px 0;
+}
+
+.product__price {
+  padding: 15px 0 30px 0;
+}
+
+.product__btn {
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -20px;
+  padding: 12px 48px;
+  background-color: red;
 }
 
 .container {
